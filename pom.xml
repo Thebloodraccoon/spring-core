@@ -37,6 +37,8 @@
         <slf4j.version>2.0.12</slf4j.version>
         <log4j.version>2.22.1</log4j.version>
         <aspectj.version>1.9.21.1</aspectj.version>
+        <hamcrest.version>2.2</hamcrest.version>
+        <json-path.version>2.9.0</json-path.version>
     </properties>
 
 
@@ -122,6 +124,18 @@
                 <groupId>org.mockito</groupId>
                 <artifactId>mockito-core</artifactId>
                 <version>${mockito.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.hamcrest</groupId>
+                <artifactId>hamcrest</artifactId>
+                <version>${hamcrest.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.jayway.jsonpath</groupId>
+                <artifactId>json-path</artifactId>
+                <version>${json-path.version}</version>
                 <scope>test</scope>
             </dependency>
             <dependency>

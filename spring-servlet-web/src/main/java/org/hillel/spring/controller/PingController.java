@@ -13,9 +13,4 @@ public class PingController {
     ResponseEntity ping() {
         return ResponseEntity.ok("ok");
     }
-
-    @GetMapping("/{id}")
-    public String getOrderById(@PathVariable int id) {
-        return "Order ID: " + id;
-    }
 }
