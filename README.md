@@ -1,2 +1,2 @@
-Simple product web app with spring
+Simple product web app with spring boot
 
