@@ -2,21 +2,25 @@ package org.hillel.spring.service;
 
 
 import org.hillel.spring.model.dto.OrderDTO;
+import org.hillel.spring.repo.OrderJpaRepo;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.ArgumentMatchers;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
 import java.util.List;
+import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyLong;
+import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.when;
 
 public class OrderServiceImplTest extends ServiceTestParent {
     @Mock
-    private OrderRepo orderRepoMock;
+    private OrderJpaRepo orderRepoMock;
     private OrderService orderService;
 
 
@@ -47,7 +51,7 @@ public class OrderServiceImplTest extends ServiceTestParent {
     public void getOrderByIdTest_success(){
         Long testId = 1L;
 
-        when(orderRepoMock.find(anyLong())).thenReturn(testOrders.get(0));
+        when(orderRepoMock.findById(anyLong())).thenReturn(Optional.ofNullable(testOrders.get(0)));
 
         OrderDTO orderById = orderService.getOrder(testId);
 
@@ -60,7 +64,6 @@ public class OrderServiceImplTest extends ServiceTestParent {
         OrderDTO orderDTO = new OrderDTO();
         orderDTO.setId(1L);
 
-        when(orderRepoMock.remove(any())).thenReturn(testOrders.get(0));
 
         OrderDTO deletedOrder = orderService.deleteOrder(orderDTO);
         assertNotNull(deletedOrder);
