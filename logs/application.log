@@ -235,3 +235,98 @@ Consider defining a bean named 'entityManagerFactory' in your configuration.
 2024-03-05T18:58:04.351+02:00  INFO 968 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-03-05T18:58:04.353+02:00  INFO 968 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-03-05T18:58:04.357+02:00  INFO 968 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-05T19:25:16.143+02:00  INFO 22448 --- [main] org.hillel.spring.App                    : Starting App using Java 19 with PID 22448 (C:\Users\VITALIY\Desktop\Hillel\spring-web\spring-servlet-web-boot\target\classes started by VITALIY in C:\Users\VITALIY\Desktop\Hillel\spring-web)
+2024-03-05T19:25:16.146+02:00  INFO 22448 --- [main] org.hillel.spring.App                    : No active profile set, falling back to 1 default profile: "default"
+2024-03-05T19:25:16.928+02:00  INFO 22448 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-05T19:25:17.000+02:00  INFO 22448 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 2 JPA repository interfaces.
+2024-03-05T19:25:17.782+02:00  INFO 22448 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-05T19:25:17.798+02:00  INFO 22448 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-05T19:25:17.798+02:00  INFO 22448 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-05T19:25:17.865+02:00  INFO 22448 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-05T19:25:17.865+02:00  INFO 22448 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1663 ms
+2024-03-05T19:25:18.502+02:00  INFO 22448 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-05T19:25:18.537+02:00  INFO 22448 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-05T19:25:18.888+02:00  INFO 22448 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@abc7005
+2024-03-05T19:25:18.891+02:00  INFO 22448 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-05T19:25:20.903+02:00  INFO 22448 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-05T19:25:21.507+02:00  WARN 22448 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-05T19:25:22.294+02:00  INFO 22448 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-05T19:25:22.303+02:00  INFO 22448 --- [main] org.hillel.spring.App                    : Started App in 6.79 seconds (process running for 7.553)
+2024-03-05T19:25:27.348+02:00  INFO 22448 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-05T19:25:27.349+02:00  INFO 22448 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-05T19:25:27.350+02:00  INFO 22448 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-05T19:28:48.103+02:00  INFO 22448 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-05T19:28:48.304+02:00  INFO 22448 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-05T19:28:48.313+02:00  INFO 22448 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-05T19:49:24.925+02:00  INFO 12136 --- [main] org.hillel.spring.App                    : Starting App using Java 19 with PID 12136 (C:\Users\VITALIY\Desktop\Hillel\spring-web\spring-servlet-web-boot\target\classes started by VITALIY in C:\Users\VITALIY\Desktop\Hillel\spring-web)
+2024-03-05T19:49:24.929+02:00  INFO 12136 --- [main] org.hillel.spring.App                    : No active profile set, falling back to 1 default profile: "default"
+2024-03-05T19:49:25.987+02:00  INFO 12136 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-05T19:49:26.108+02:00  INFO 12136 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 108 ms. Found 2 JPA repository interfaces.
+2024-03-05T19:49:27.074+02:00  INFO 12136 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-05T19:49:27.090+02:00  INFO 12136 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-05T19:49:27.091+02:00  INFO 12136 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-05T19:49:27.168+02:00  INFO 12136 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-05T19:49:27.168+02:00  INFO 12136 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2174 ms
+2024-03-05T19:49:27.830+02:00  INFO 12136 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-05T19:49:27.866+02:00  INFO 12136 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-05T19:49:28.164+02:00  INFO 12136 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5d800a56
+2024-03-05T19:49:28.167+02:00  INFO 12136 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-05T19:49:29.966+02:00  INFO 12136 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-05T19:49:30.448+02:00  WARN 12136 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-05T19:49:31.230+02:00  INFO 12136 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-05T19:49:31.238+02:00  INFO 12136 --- [main] org.hillel.spring.App                    : Started App in 7.024 seconds (process running for 7.915)
+2024-03-05T19:52:43.131+02:00  INFO 12136 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-05T19:52:43.335+02:00  INFO 12136 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-05T19:52:43.346+02:00  INFO 12136 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-05T19:52:46.162+02:00  INFO 23036 --- [main] org.hillel.spring.App                    : Starting App using Java 19 with PID 23036 (C:\Users\VITALIY\Desktop\Hillel\spring-web\spring-servlet-web-boot\target\classes started by VITALIY in C:\Users\VITALIY\Desktop\Hillel\spring-web)
+2024-03-05T19:52:46.165+02:00  INFO 23036 --- [main] org.hillel.spring.App                    : No active profile set, falling back to 1 default profile: "default"
+2024-03-05T19:52:46.920+02:00  INFO 23036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-05T19:52:47.006+02:00  INFO 23036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75 ms. Found 2 JPA repository interfaces.
+2024-03-05T19:52:47.776+02:00  INFO 23036 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-05T19:52:47.791+02:00  INFO 23036 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-05T19:52:47.791+02:00  INFO 23036 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-05T19:52:47.862+02:00  INFO 23036 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-05T19:52:47.862+02:00  INFO 23036 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1645 ms
+2024-03-05T19:52:48.037+02:00  INFO 23036 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-05T19:52:48.387+02:00  INFO 23036 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e0d1dc4
+2024-03-05T19:52:48.389+02:00  INFO 23036 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-05T19:52:48.885+02:00  INFO 23036 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-05T19:52:50.089+02:00  INFO 23036 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-05T19:52:50.601+02:00  WARN 23036 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-05T19:52:51.230+02:00  INFO 23036 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-05T19:52:51.238+02:00  INFO 23036 --- [main] org.hillel.spring.App                    : Started App in 5.698 seconds (process running for 6.5)
+2024-03-05T19:52:53.339+02:00  INFO 23036 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-05T19:52:53.340+02:00  INFO 23036 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-05T19:52:53.341+02:00  INFO 23036 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-05T19:52:53.543+02:00 ERROR 23036 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'homework.t_order' doesn't exist
+2024-03-05T19:52:53.554+02:00 ERROR 23036 --- [http-nio-8080-exec-2] org.hillel.spring.aspect.LoggingAspect   : Exception in service method: JDBC exception executing SQL [select o1_0.id,o1_0.cost,o1_0.data from t_order o1_0] [Table 'homework.t_order' doesn't exist] [n/a]; SQL [n/a]
+2024-03-05T19:52:53.555+02:00 ERROR 23036 --- [http-nio-8080-exec-2] org.hillel.spring.aspect.LoggingAspect   : Exception in service method: JDBC exception executing SQL [select o1_0.id,o1_0.cost,o1_0.data from t_order o1_0] [Table 'homework.t_order' doesn't exist] [n/a]; SQL [n/a]
+2024-03-05T19:52:55.260+02:00 ERROR 23036 --- [http-nio-8080-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'homework.t_order' doesn't exist
+2024-03-05T19:52:55.262+02:00 ERROR 23036 --- [http-nio-8080-exec-3] org.hillel.spring.aspect.LoggingAspect   : Exception in service method: JDBC exception executing SQL [select o1_0.id,o1_0.cost,o1_0.data from t_order o1_0] [Table 'homework.t_order' doesn't exist] [n/a]; SQL [n/a]
+2024-03-05T19:52:55.262+02:00 ERROR 23036 --- [http-nio-8080-exec-3] org.hillel.spring.aspect.LoggingAspect   : Exception in service method: JDBC exception executing SQL [select o1_0.id,o1_0.cost,o1_0.data from t_order o1_0] [Table 'homework.t_order' doesn't exist] [n/a]; SQL [n/a]
+2024-03-05T19:53:32.559+02:00  INFO 23036 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-05T19:53:32.562+02:00  INFO 23036 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-05T19:53:32.571+02:00  INFO 23036 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-05T19:53:35.293+02:00  INFO 19284 --- [main] org.hillel.spring.App                    : Starting App using Java 19 with PID 19284 (C:\Users\VITALIY\Desktop\Hillel\spring-web\spring-servlet-web-boot\target\classes started by VITALIY in C:\Users\VITALIY\Desktop\Hillel\spring-web)
+2024-03-05T19:53:35.295+02:00  INFO 19284 --- [main] org.hillel.spring.App                    : No active profile set, falling back to 1 default profile: "default"
+2024-03-05T19:53:36.068+02:00  INFO 19284 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-05T19:53:36.139+02:00  INFO 19284 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 2 JPA repository interfaces.
+2024-03-05T19:53:36.973+02:00  INFO 19284 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-05T19:53:36.988+02:00  INFO 19284 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-05T19:53:36.988+02:00  INFO 19284 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-05T19:53:37.057+02:00  INFO 19284 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-05T19:53:37.057+02:00  INFO 19284 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1706 ms
+2024-03-05T19:53:37.653+02:00  INFO 19284 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-05T19:53:37.683+02:00  INFO 19284 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-05T19:53:37.947+02:00  INFO 19284 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5d800a56
+2024-03-05T19:53:37.949+02:00  INFO 19284 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-05T19:53:39.702+02:00  INFO 19284 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-05T19:53:40.107+02:00  WARN 19284 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-05T19:53:40.774+02:00  INFO 19284 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-05T19:53:40.782+02:00  INFO 19284 --- [main] org.hillel.spring.App                    : Started App in 6.123 seconds (process running for 6.883)
+2024-03-05T19:54:26.526+02:00  INFO 19284 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-05T19:54:26.527+02:00  INFO 19284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-05T19:54:26.528+02:00  INFO 19284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-05T20:07:34.057+02:00  INFO 19284 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-05T20:07:34.061+02:00  INFO 19284 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-05T20:07:34.070+02:00  INFO 19284 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
