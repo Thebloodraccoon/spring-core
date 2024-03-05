@@ -330,3 +330,39 @@ Consider defining a bean named 'entityManagerFactory' in your configuration.
 2024-03-05T20:07:34.057+02:00  INFO 19284 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-03-05T20:07:34.061+02:00  INFO 19284 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-03-05T20:07:34.070+02:00  INFO 19284 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-05T20:07:47.262+02:00  INFO 13472 --- [main] org.hillel.spring.App                    : Starting App using Java 19 with PID 13472 (C:\Users\VITALIY\Desktop\Hillel\spring-web\spring-servlet-web-boot\target\classes started by VITALIY in C:\Users\VITALIY\Desktop\Hillel\spring-web)
+2024-03-05T20:07:47.265+02:00  INFO 13472 --- [main] org.hillel.spring.App                    : No active profile set, falling back to 1 default profile: "default"
+2024-03-05T20:07:48.255+02:00  INFO 13472 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-05T20:07:48.329+02:00  INFO 13472 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 3 JPA repository interfaces.
+2024-03-05T20:07:49.203+02:00  INFO 13472 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-05T20:07:49.224+02:00  INFO 13472 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-05T20:07:49.224+02:00  INFO 13472 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-05T20:07:49.309+02:00  INFO 13472 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-05T20:07:49.309+02:00  INFO 13472 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1987 ms
+2024-03-05T20:07:49.572+02:00  INFO 13472 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-05T20:07:49.889+02:00  INFO 13472 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3afca2c
+2024-03-05T20:07:49.890+02:00  INFO 13472 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-05T20:07:50.393+02:00  INFO 13472 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-05T20:07:51.780+02:00  INFO 13472 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-05T20:07:52.453+02:00  WARN 13472 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-05T20:07:53.023+02:00  INFO 13472 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@27563444, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@507e3e77, org.springframework.security.web.context.SecurityContextHolderFilter@186fc6e, org.springframework.security.web.header.HeaderWriterFilter@726d0482, org.springframework.security.web.authentication.logout.LogoutFilter@40dcbf7, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1db7c267, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@569026df, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7896e96a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@73796ae5, org.springframework.security.web.access.ExceptionTranslationFilter@e1d2781, org.springframework.security.web.access.intercept.AuthorizationFilter@46059b73]
+2024-03-05T20:07:53.541+02:00  INFO 13472 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-05T20:07:53.550+02:00  INFO 13472 --- [main] org.hillel.spring.App                    : Started App in 6.959 seconds (process running for 7.9)
+2024-03-05T20:08:01.177+02:00  INFO 13472 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-05T20:08:01.177+02:00  INFO 13472 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-05T20:08:01.178+02:00  INFO 13472 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-03-05T20:08:20.824+02:00  INFO 13472 --- [http-nio-8080-exec-4] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x000xf70x010x000x000xf30x030x03I0xed00xbe0xe90xa60xdf70xae0xf90xd20x990x010x8c('0xa0d/LZ0xf60xe20xd90xd8/0x19I~0xc90xa0c ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:407) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:264) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
