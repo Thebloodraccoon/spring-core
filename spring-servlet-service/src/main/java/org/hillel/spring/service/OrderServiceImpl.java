@@ -4,8 +4,7 @@ import lombok.RequiredArgsConstructor;
 import org.hillel.spring.model.dto.OrderDTO;
 import org.hillel.spring.model.entity.Order;
 import org.hillel.spring.model.mapper.OrderMapper;
-import org.hillel.spring.repo.OrderRepo;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.hillel.spring.repo.OrderJpaRepo;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 
@@ -16,7 +15,7 @@ import java.util.List;
 @Scope("prototype")
 @RequiredArgsConstructor
 public class OrderServiceImpl implements OrderService {
-    private final OrderRepo productRepo;
+    private final OrderJpaRepo productRepo;
     private final OrderMapper productMapper;
 
     @Override
@@ -31,14 +30,14 @@ public class OrderServiceImpl implements OrderService {
     public OrderDTO deleteOrder(OrderDTO orderDTO) {
         Order order = productMapper.orderDtoToOrder(orderDTO);
 
-        Order remove = productRepo.remove(order);
+        productRepo.delete(order);
 
-        return productMapper.orderToOrderDTO(remove);
+        return productMapper.orderToOrderDTO(order);
     }
 
     @Override
     public OrderDTO getOrder(Long id) {
-        Order order = productRepo.find(id);
+        Order order = productRepo.findById(id).get();
 
         return productMapper.orderToOrderDTO(order);
     }

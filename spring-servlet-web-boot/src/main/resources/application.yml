@@ -8,3 +8,12 @@ spring:
     username: ${MYSQL_USER}
     password: ${MYSQL_PASSWORD}
     url: ${MYSQL_URL}
+
+
+logging:
+  level:
+    org:
+      springframework: info
+      hibernate: error
+  file:
+    name: logs/application.log

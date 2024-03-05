@@ -2,7 +2,6 @@ package org.hillel.spring.service;
 
 
 import org.hillel.spring.model.dto.OrderDTO;
-import org.hillel.spring.repo.OrderRepo;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
@@ -27,6 +26,12 @@ public class OrderServiceImplTest extends ServiceTestParent {
 
         orderService = new OrderServiceImpl(orderRepoMock, orderMapper);
     }
+
+    @BeforeEach
+    public void setUps() {
+        System.out.println("hi");
+    }
+
 
     @Test
     public void getAllOrdersTest_success() {

@@ -21,6 +21,7 @@
         <module>spring-servlet-service</module>
         <module>spring-servlet-web</module>
         <module>spring-servlet-web-boot</module>
+        <module>spring-servlet-security</module>
     </modules>
 
     <properties>

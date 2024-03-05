@@ -21,7 +21,7 @@
         <dependency>
             <groupId>org.hillel.spring</groupId>
             <artifactId>spring-servlet-data</artifactId>
-            <version>${project.parent.version}</version>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
 
         <dependency>
