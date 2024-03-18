@@ -1,20 +1,30 @@
 package org.hillel.spring.config;
 
+import lombok.AllArgsConstructor;
 import org.hillel.spring.enums.RoleType;
+import org.hillel.spring.repo.UserRepository;
+import org.hillel.spring.service.MyUserDetailsService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.ProviderManager;
+import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.config.annotation.web.configurers.HeadersConfigurer;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
 @EnableWebSecurity
+@AllArgsConstructor
 public class SecurityConfig {
+    private UserRepository userRepo;
     @Bean
     public static PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
@@ -28,7 +38,8 @@ public class SecurityConfig {
 
         security.authorizeHttpRequests(authorize -> authorize
                 .requestMatchers("/ping").hasAnyAuthority(RoleType.ROLE_USER.name())
-                .requestMatchers("/product/**").hasAnyAuthority(RoleType.ROLE_ADMIN.name())
+                .requestMatchers("/products/**").hasAnyAuthority(RoleType.ROLE_ADMIN.name())
+                .requestMatchers("/orders/**").permitAll()
                 .anyRequest().authenticated()
         );
 
@@ -36,4 +47,21 @@ public class SecurityConfig {
 
         return security.build();
     }
+
+    @Bean
+    public UserDetailsService userDetailsService() {
+        return new MyUserDetailsService(userRepo);
+    }
+
+    @Bean
+    public AuthenticationManager authenticationManager(
+            UserDetailsService userDetailsService,
+            PasswordEncoder passwordEncoder) {
+        DaoAuthenticationProvider authenticationProvider = new DaoAuthenticationProvider();
+        authenticationProvider.setUserDetailsService(userDetailsService);
+        authenticationProvider.setPasswordEncoder(passwordEncoder);
+
+        return new ProviderManager(authenticationProvider);
+    }
+
 }

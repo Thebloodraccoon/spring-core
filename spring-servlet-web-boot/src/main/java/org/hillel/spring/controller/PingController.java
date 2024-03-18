@@ -7,7 +7,7 @@ import org.springframework.security.core.Authentication;
 @RequestMapping("/ping")
 public class PingController {
 
-    @GetMapping("/ping")
+    @GetMapping()
     public String ping(Authentication authentication) {
         return "OK";
     }

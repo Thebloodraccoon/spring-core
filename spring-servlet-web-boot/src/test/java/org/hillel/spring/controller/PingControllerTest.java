@@ -23,6 +23,6 @@ public class PingControllerTest extends ControllerTestParent {
     public void getAllOrdersTest_success() throws Exception {
         mockMvc.perform(get("/ping"))
                 .andExpect(status().isOk())
-                .andExpect(content().string("ok"));
+                .andExpect(content().string("OK"));
     }
 }

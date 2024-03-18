@@ -15,39 +15,39 @@ import java.util.List;
 @Scope("prototype")
 @RequiredArgsConstructor
 public class OrderServiceImpl implements OrderService {
-    private final OrderJpaRepo productRepo;
-    private final OrderMapper productMapper;
+    private final OrderJpaRepo orderRepo;
+    private final OrderMapper orderMapper;
 
     @Override
     public OrderDTO addOrder(OrderDTO orderDTO) {
-        Order order = productMapper.orderDtoToOrder(orderDTO);
+        Order order = orderMapper.orderDtoToOrder(orderDTO);
 
-        Order save = productRepo.save(order);
-        return productMapper.orderToOrderDTO(save);
+        Order save = orderRepo.save(order);
+        return orderMapper.orderToOrderDTO(save);
     }
 
     @Override
     public OrderDTO deleteOrder(OrderDTO orderDTO) {
-        Order order = productMapper.orderDtoToOrder(orderDTO);
+        Order order = orderMapper.orderDtoToOrder(orderDTO);
 
-        productRepo.delete(order);
+        orderRepo.delete(order);
 
-        return productMapper.orderToOrderDTO(order);
+        return orderMapper.orderToOrderDTO(order);
     }
 
     @Override
     public OrderDTO getOrder(Long id) {
-        Order order = productRepo.findById(id).get();
+        Order order = orderRepo.findById(id).get();
 
-        return productMapper.orderToOrderDTO(order);
+        return orderMapper.orderToOrderDTO(order);
     }
 
     @Override
     public List<OrderDTO> getOrders() {
-        List<Order> all = productRepo.findAll();
+        List<Order> all = orderRepo.findAll();
 
         return all.stream()
-                .map(productMapper::orderToOrderDTO)
+                .map(orderMapper::orderToOrderDTO)
                 .toList();
     }
 }

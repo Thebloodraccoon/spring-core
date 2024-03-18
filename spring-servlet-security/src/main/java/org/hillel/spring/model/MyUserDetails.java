@@ -1,17 +1,20 @@
-package org.hillel.spring.model.details;
+package org.hillel.spring.model;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import org.hillel.spring.model.entity.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
-
+import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
 
-@Data
+
+@Getter
+@Setter
 @AllArgsConstructor
-public class UserDetails implements org.springframework.security.core.userdetails.UserDetails {
+public class MyUserDetails implements UserDetails {
     private User user;
 
     @Override
