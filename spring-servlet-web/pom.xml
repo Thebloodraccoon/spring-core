@@ -26,6 +26,11 @@
             <version>${project.parent.version}</version>
         </dependency>
         <dependency>
+            <groupId>org.hillel.spring</groupId>
+            <artifactId>spring-servlet-security</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
